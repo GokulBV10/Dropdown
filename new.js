@@ -769,9 +769,9 @@ document.getElementById('State').addEventListener('change', function () {
     loadDistrict(this.value);
   }
 });
-function loadDistrict(selectedDistrict) {
+function loadDistrict(selectedStateName) {
   var selectedState = states.filter((stateItem) => {
-    return selectedDistrict === stateItem.State;
+    return selectedStateName === stateItem.State;
   });
 
   const districts =
